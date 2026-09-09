@@ -1,13 +1,11 @@
 zn "%SYS"
 Do ##class(Security.Users).UnExpireUserPasswords("*")
 zpm "install passwordless"
-
+zpm "install itermil"
 zn "USER"
-
-// Create /_vscode web app to support intersystems-community.testingmanager VS Code extension
+;; Create /_vscode web app to support intersystems-community.testingmanager VS Code extension
 zpm "install vscode-per-namespace-settings"
-zpm "install webterminal"
-
-zpm "load /opt/irisapp/ -v":1
-
+zpm "install alwo-goselector"
+zpm "install samples-bi"
+zpm "list"
 halt
